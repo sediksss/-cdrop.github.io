@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Открытие кейсов</title>
+    <style>
+        /* Стили для вашего приложения */
+    </style>
+</head>
+<body>
+    <h1>Открытие кейсов</h1>
+    <button id="openCaseButton">Открыть кейс</button>
+    <div id="result"></div>
+
+    <script>
+        // Логика открытия кейса
+        document.getElementById('openCaseButton').addEventListener('click', function() {
+            const items = ['Предмет 1', 'Предмет 2', 'Предмет 3'];
+            const randomIndex = Math.floor(Math.random() * items.length);
+            const selectedItem = items[randomIndex];
+            document.getElementById('result').innerText = 'Вы получили: ' + selectedItem;
+        });
+    </script>
+</body>
+</html>
